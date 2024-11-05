@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
+    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Активные заказы</title>
+    <link rel="stylesheet" href="css/suppliers-active.css">
+    <script defer src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <aside class="menu">
+            <div class="menu__user">
+                <div class="avatar">
+                    <img class="menu__avatar" src="img/avatar.svg" alt="avatar">
+                    <p class="user_id">Поставищк</p>
+                </div>
+                <a href="index.html" id="logoutButton">
+                    <img class="logout__img" src="img/log-out.svg" alt="logout">
+                </a>
+            </div>
+            <h2 class="menu__title">Панель управления</h2>
+            <ul class="nav__menu">
+                <li>
+                    <a href="suppliers-store.html"><img src="img/clipboard list.svg" alt="clipboard">
+                        Склад</a>
+                </li>
+                <li>
+                    <a href="suppliers-buyers.html"><img src="img/user.svg" alt="user">
+                        Закупщики</a>
+                </li>
+                <li>
+                    <a href="suppliers-active.html"><img src="img/active.svg" alt="active">
+                        Активные заказы</a>
+                </li>
+                <li>
+                    <a href="suppliers-complete.html"><img src="img/complete.svg" alt="complete">
+                        Готовые заказы</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <div class="orders-container">
+        <main class="main__container">
+            <h1 class="main__title">Активные заказы</h1>
+            <button class="add-button">Очистить</button>
+            <div class="buyers-list">
+                <div class="buyer-item">
+                    <div class="item">ЗакупщикID: <span>1</span></div>
+                    <div class="item">ЗаказID: <span>1</span></div>
+                    <div class="item">Дата: <span>21.10.2024</span></div>
+                    <div class="item">Статус: <span>Ожидание</span></div>
+                    <button class="info-button item">Информация</button>
+                    <button class="edit-button item">Подтвердить</button>
+                    <button class="delete-button item">Отменить</button>
+                </div>
+                <div class="buyer-item">
+                    <div class="item">ЗакупщикID: <span>2</span></div>
+                    <div class="item">ЗаказID: <span>2</span></div>
+                    <div class="item">Дата: <span>21.10.2024</span></div>
+                    <div class="item">Статус: <span>Ожидание</span></div>
+                    <button class="info-button item">Информация</button>
+                    <button class="edit-button item">Подтвердить</button>
+                    <button class="delete-button item">Отменить</button>
+                </div>
+
+                <div class="buyer-item">
+                    <div class="item">ЗакупщикID: <span>3</span></div>
+                    <div class="item">ЗаказID: <span>3</span></div>
+                    <div class="item">Дата: <span>21.10.2024</span></div>
+                    <div class="item">Статус: <span>Ожидание</span></div>
+                    <button class="info-button item">Информация</button>
+                    <button class="edit-button item">Подтвердить</button>
+                    <button class="delete-button item">Отменить</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <table>
+                <div class="modal-header">
+                    <h2>Информация о заказе</h2>
+                    <button class="close-button">✖</button>
+                </div>
+                <tr>
+                    <td>ID Заказа</td>
+                    <td><span id="detailId">1</span></td>
+                </tr>
+                <tr>
+                    <td>Имя Закупщика</td>
+                    <td><span id="detailClientName">Дмитрий</span></td>
+                </tr>
+                <tr>
+                    <td>Номер телефона</td>
+                    <td><span id="detailPhone">+7-920-023-4568</span></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><span id="detailEmail">zakupchik1@mail.ru</span></td>
+                </tr>
+                <tr>
+                    <td>Поставщик</td>
+                    <td><span id="detailMaster">УГМК</span></td>
+                </tr>
+                <tr>
+                    <td>Товар</td>
+                    <td><span id="detailService">Медь</span></td>
+                </tr>
+                <tr>
+                    <td>Количество</td>
+                    <td><span id="detailStatus">500</span></td>
+                </tr>
+                <tr>
+                    <td>Ед.измерения</td>
+                    <td><span id="detailStatus">кг</span></td>
+                </tr>
+                <tr>
+                    <td>Стоимость</td>
+                    <td><span id="detailPrice">315 000</span></td>
+                </tr>
+                <tr>
+                    <td>Дата</td>
+                    <td><span id="detailDate">21.10.24</span></td>
+                </tr>
+                <tr>
+                    <td>Статус заказа</td>
+                    <td><span id="detailStatus">Ожидание</span></td>
+                </tr>
+                <tr>
+                    <td>Город</td>
+                    <td><span id="detailStatus"></span></td>
+                </tr>
+                <tr>
+                    <td>Улица</td>
+                    <td><span id="detailStatus"></span></td>
+                </tr>
+                <tr>
+                    <td>Дом</td>
+                    <td><span id="detailStatus"></span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+        if (!currentUser) {
+
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>

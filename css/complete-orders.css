@@ -1,0 +1,239 @@
+@font-face {
+    font-family: "Inter-Regular"; 
+    src: url("../fonts/Inter-Regular.otf"); 
+    font-style: normal; 
+    font-weight: normal; 
+  }
+  @font-face {
+    font-family: "Inter-Bold"; 
+    src: url("../fonts/Inter-Bold.otf"); 
+    font-style: bold; 
+    font-weight: bold; 
+  } 
+  @font-face {
+    font-family: "Inter-Light"; 
+    src: url("../fonts/Inter-Light.otf"); 
+    font-style: normal; 
+    font-weight: lighter; 
+  } 
+  @font-face {
+    font-family: "Inter-Medium"; 
+    src: url("../fonts/Inter-Medium.otf"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+  @font-face {
+    font-family: "Inter-SemiBold"; 
+    src: url("../fonts/Inter-SemiBold.otf"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+  
+  body {
+    font-family: 'Inter';
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .admin {
+    margin-left: 56px;  
+  }
+  .menu {
+    background-color: #F09B57;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color:white;
+    width: 400px;
+    padding: 30px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .user_id {
+    font-family: "Inter";
+    font-weight: lighter;
+    font-size: 20px;
+   }
+  .menu__user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .avatar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar p {
+    margin-left: 10px;
+  }
+  li{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menu__title {
+    font-weight: bold;
+    margin-top: 60px;
+  }
+  
+  .nav__menu p {
+   margin-left: 10px;
+  }
+  
+  .main__container h1 {
+    position: absolute;
+    left: 492px;
+    top: 76px;
+    right: 850px;
+    bottom: 909px;
+    font-weight: 400;
+  }
+  
+  .table {
+    position: absolute;
+    width: calc(100% - 440px) ;
+    left: 420px;
+    top: 190px;
+    right: 0px;
+    bottom:779px;
+    border-collapse: collapse; 
+  }
+  
+  tbody td {
+    padding: 20px;
+  
+  }
+  tbody th{
+    padding: 20px;
+    text-align: start;
+    font-family: "Inter-Light";
+    font-weight: lighter;
+  } 
+  thead th {
+    padding: 20px;
+    text-align: start;
+  }
+  table thead{
+    border-bottom: 2px solid black;
+    font-family: "Inter-Bold";
+    font-weight: bold;
+    font-size: 23px;
+  }
+  table tbody {
+    font-family: "Inter-Light";
+    font-size: 18px;
+    font-weight: lighter;
+    font-style: normal;  
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .menu {
+    background-color: #F09B57;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color:white;
+    width: 400px;
+    padding: 30px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  li{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 200;
+  
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    filter: sepia(100%) brightness(90%);
+  }
+  .menu__title {
+    font-weight: bold;
+    margin-top: 60px;
+  }
+  
+  .nav__menu p {
+   margin-left: 10px;
+  }
+  
+  .orders-container {
+    align-items: center;
+    width: 855px;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 482px;
+    margin-top: 76px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.clear-button {
+    width: 146px;
+    margin-left: 847px;
+    margin-bottom: 17px;
+    padding: 6px 12px;
+    background-color: #c4c4c4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.order-table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.order-row {
+    width: 995px;
+    height: 39px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.order-row div {
+    font-size: 14px;
+    color: #333;
+}
+
+.order-row span {
+    font-weight: bold;
+}

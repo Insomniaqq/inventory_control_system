@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
+    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Система управления складом - Вход</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/auth.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Система управления складом</h1>
+        </div>
+        <div class="right">
+            <h2>Вход</h2>
+            <div id="message" style="color: red;"></div>
+            <form id="authForm">
+                <label for="login">Логин</label>
+                <input type="text" id="login" maxlength="11" name="login" placeholder="Введите логин" required>
+
+                <label for="password">Пароль</label>
+                <input type="password" id="password" maxlength="11" name="password" placeholder="Введите пароль" required>
+
+                <button id="button" type="button">Войти</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

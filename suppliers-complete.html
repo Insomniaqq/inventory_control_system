@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
+    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Готовые заказы</title>
+    <link rel="stylesheet" href="css/suppliers-complete.css">
+    <script defer src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <aside class="menu">
+            <div class="menu__user">
+                <div class="avatar">
+                    <img class="menu__avatar" src="img/avatar.svg" alt="avatar">
+                    <p class="user_id">Поставищк</p>
+                </div>
+                <a href="index.html" id="logoutButton">
+                    <img class="logout__img" src="img/log-out.svg" alt="logout">
+                </a>
+            </div>
+            <h2 class="menu__title">Панель управления</h2>
+            <ul class="nav__menu">
+                <li>
+                    <a href="suppliers-store.html"><img src="img/clipboard list.svg" alt="clipboard">
+                        Склад</a>
+                </li>
+                <li>
+                    <a href="suppliers-buyers.html"><img src="img/user.svg" alt="user">
+                        Закупщики</a>
+                </li>
+                <li>
+                    <a href="suppliers-active.html"><img src="img/active.svg" alt="active">
+                        Активные заказы</a>
+                </li>
+                <li>
+                    <a href="suppliers-complete.html"><img src="img/complete.svg" alt="complete">
+                        Готовые заказы</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <div class="orders-container">
+        <h1>Заказ отправлен</h1>
+        <button class="clear-button">Очистить</button>
+        <div class="order-table">
+            <div class="order-row">
+                <div>Закупщик ID: <span>1</span></div>
+                <div>Заказ ID: <span>1</span></div>
+                <div>Дата: <span>21.10.24</span></div>
+                <div>Статус: <span>Выполнено</span></div>
+            </div>
+            <div class="order-row">
+                <div>Закупщик ID: <span>1</span></div>
+                <div>Заказ ID: <span>1</span></div>
+                <div>Дата: <span>21.10.24</span></div>
+                <div>Статус: <span>Выполнено</span></div>
+            </div>
+            <div class="order-row">
+                <div>Закупщик ID: <span>1</span></div>
+                <div>Заказ ID: <span>1</span></div>
+                <div>Дата: <span>21.10.24</span></div>
+                <div>Статус: <span>Выполнено</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+        if (!currentUser) {
+
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>

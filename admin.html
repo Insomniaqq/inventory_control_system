@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
+    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Админ-панель</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <script defer src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <aside class="menu">
+            <div class="menu__user">
+                <div class="avatar">
+                    <img class="menu__avatar" src="img/avatar.svg" alt="avatar">
+                    <p class="user_id">admin <br>
+                    </p>
+                </div>
+                <a href="index.html" id="logoutButton">
+                    <img class="logout__img" src="img/log-out.svg" alt="logout">
+                </a>
+            </div>
+            <h2 class="menu__title">Панель управления</h2>
+            <ul class="nav__menu">
+                <li>
+                    <a href="store.html"><img src="img/clipboard list.svg" alt="clipboard">
+                        Склад</a>
+                </li>
+                <li>
+                    <a href="buy.html"><img src="img/shopping-cart.svg" alt="cart">
+                        Закупки</a>
+                </li>
+                <li>
+                    <a href="suppliers.html"><img src="img/user.svg" alt="user">
+                        Поставщики</a>
+                </li>
+                <li>
+                    <a href="active-orders.html"><img src="img/active.svg" alt="active">
+                        Активные заказы</a>
+                </li>
+                <li>
+                    <a href="complete-orders.html"><img src="img/complete.svg" alt="complete">
+                        Выполненные заказы</a>
+                </li>
+                <li>
+                    <a class="admin" href="admin.html">
+                        Администратор</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <main class="main__container">
+        <h1 class="main__title">Администратор</h1>
+        <button class="add-button">Добавить</button>
+        <div class="buyers-list">
+            <h3>Закупщики</h3>
+            <div class="buyer-item">
+                <div>ЗакупщикID: <span>1</span></div>
+                <div>Имя: <span>Дмитрий</span></div>
+                <div>Логин: <span>dmitriy123</span></div>
+                <div>Пароль: <span>1234</span></div>
+                <div>Телефон: <span>+7-920-023-4568</span></div>
+                <div>Почта: <span>zakupchik1@mail.ru</span></div>
+                <button class="delete-button"><img src="img/Delete.svg" alt="delete"></button>
+            </div>
+            <div class="buyer-item">
+                <div>ЗакупщикID: <span>2</span></div>
+                <div>Имя: <span>Иван</span></div>
+                <div>Логин: <span>ivan123</span></div>
+                <div>Пароль: <span>12345</span></div>
+                <div>Телефон: <span>+7-925-023-4469</span></div>
+                <div>Почта: <span>zakupchik2@mail.ru</span></div>
+                <button class="delete-button"><img src="img/Delete.svg" alt="delete"></button>
+            </div>
+            <div class="buyer-item">
+                <div>ЗакупщикID: <span>3</span></div>
+                <div>Имя: <span>Ольга</span></div>
+                <div>Логин: <span>olga123</span></div>
+                <div>Пароль: <span>passOlga1</span></div>
+                <div>Телефон: <span>+7-926-523-4328</span></div>
+                <div>Почта: <span>zakupchik3@mail.ru</span></div>
+                <button class="delete-button"><img src="img/Delete.svg" alt="delete"></button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+        if (!currentUser) {
+
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>
